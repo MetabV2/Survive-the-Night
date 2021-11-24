@@ -6,22 +6,28 @@ local Button1 = Instance.new("ImageButton")
 local BtnText = Instance.new("TextLabel")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
 local Button2 = Instance.new("ImageButton")
 local BtnText_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local Button3 = Instance.new("ImageButton")
 local BtnText_3 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
 local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_4 = Instance.new("UICorner")
 local Button4 = Instance.new("ImageButton")
 local BtnText_4 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
 local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_5 = Instance.new("UICorner")
 local Button5 = Instance.new("ImageButton")
 local BtnText_5 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
 local UIGradient_5 = Instance.new("UIGradient")
+local UICorner_6 = Instance.new("UICorner")
 local CloseButton = Instance.new("ImageButton")
 local UIGradient_6 = Instance.new("UIGradient")
 local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
@@ -30,7 +36,7 @@ local ImageButton = Instance.new("ImageButton")
 --Properties:
 
 TEAMMETAB.Name = "TEAM METAB"
-TEAMMETAB.Parent = game.CoreGUI
+TEAMMETAB.Parent = game.CoreGui
 TEAMMETAB.ResetOnSpawn = false
 
 ImageLabel.Parent = TEAMMETAB
@@ -46,19 +52,19 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.36953643, 0, 0.289772928, 0)
-ScrollingFrame.Size = UDim2.new(0, 195, 0, 256)
+ScrollingFrame.Size = UDim2.new(0, 188, 0, 248)
 
 Button1.Name = "Button 1"
 Button1.Parent = ScrollingFrame
 Button1.AnchorPoint = Vector2.new(1, 1)
 Button1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Button1.BackgroundTransparency = 1.000
-Button1.Position = UDim2.new(0.945403278, 0, 0.0574980229, 0)
-Button1.Size = UDim2.new(0.882225692, 0, 0.0763209537, 0)
+Button1.Position = UDim2.new(0.91613692, 0, 0.0545023233, 0)
+Button1.Size = UDim2.new(0.798818767, 0, 0.162983879, 0)
 Button1.Image = "rbxassetid://2790382281"
 Button1.ImageColor3 = Color3.fromRGB(35, 255, 255)
-Button1.ScaleType = Enum.ScaleType.Slice
 Button1.SliceCenter = Rect.new(4, 4, 252, 252)
+Button1.SliceScale = 0.000
 
 BtnText.Name = "BtnText"
 BtnText.Parent = Button1
@@ -69,7 +75,7 @@ BtnText.BorderSizePixel = 0
 BtnText.Position = UDim2.new(0.498592883, 0, 0.550041258, 0)
 BtnText.Size = UDim2.new(0.891457498, -5, 0.59266752, -5)
 BtnText.Font = Enum.Font.GothamBlack
-BtnText.Text = "FLY[E]"
+BtnText.Text = "FLY [E]"
 BtnText.TextColor3 = Color3.fromRGB(255, 255, 255)
 BtnText.TextScaled = true
 BtnText.TextSize = 5.000
@@ -79,21 +85,23 @@ UIAspectRatioConstraint.Parent = Button1
 UIAspectRatioConstraint.AspectRatio = 4.000
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(0.98, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
-UIGradient.Offset = Vector2.new(-0.349999994, 0)
+UIGradient.Offset = Vector2.new(-0.5, 0)
 UIGradient.Rotation = -135
 UIGradient.Parent = Button1
+
+UICorner.Parent = Button1
 
 Button2.Name = "Button 2"
 Button2.Parent = ScrollingFrame
 Button2.AnchorPoint = Vector2.new(1, 1)
 Button2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Button2.BackgroundTransparency = 1.000
-Button2.Position = UDim2.new(0.945403278, 0, 0.112564102, 0)
-Button2.Size = UDim2.new(0.882225692, 0, 0.0763209537, 0)
+Button2.Position = UDim2.new(0.916136861, 0, 0.10264048, 0)
+Button2.Size = UDim2.new(0.798818767, 0, 0.145480141, 0)
 Button2.Image = "rbxassetid://2790382281"
 Button2.ImageColor3 = Color3.fromRGB(35, 255, 255)
-Button2.ScaleType = Enum.ScaleType.Slice
 Button2.SliceCenter = Rect.new(4, 4, 252, 252)
+Button2.SliceScale = 0.000
 
 BtnText_2.Name = "BtnText"
 BtnText_2.Parent = Button2
@@ -114,21 +122,25 @@ UIAspectRatioConstraint_2.Parent = Button2
 UIAspectRatioConstraint_2.AspectRatio = 4.000
 
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(0.98, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
-UIGradient_2.Offset = Vector2.new(-0.349999994, 0)
+UIGradient_2.Offset = Vector2.new(-0.400000006, 0)
 UIGradient_2.Rotation = -135
 UIGradient_2.Parent = Button2
+
+UICorner_2.Parent = Button2
+
+UICorner_3.Parent = UICorner_2
 
 Button3.Name = "Button 3"
 Button3.Parent = ScrollingFrame
 Button3.AnchorPoint = Vector2.new(1, 1)
 Button3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Button3.BackgroundTransparency = 1.000
-Button3.Position = UDim2.new(0.945403278, 0, 0.167630181, 0)
-Button3.Size = UDim2.new(0.882225692, 0, 0.0763209537, 0)
+Button3.Position = UDim2.new(0.913488388, 0, 0.152211681, 0)
+Button3.Size = UDim2.new(0.799000025, 0, 0.144999996, 0)
 Button3.Image = "rbxassetid://2790382281"
 Button3.ImageColor3 = Color3.fromRGB(35, 255, 255)
-Button3.ScaleType = Enum.ScaleType.Slice
 Button3.SliceCenter = Rect.new(4, 4, 252, 252)
+Button3.SliceScale = 0.000
 
 BtnText_3.Name = "BtnText"
 BtnText_3.Parent = Button3
@@ -149,21 +161,23 @@ UIAspectRatioConstraint_3.Parent = Button3
 UIAspectRatioConstraint_3.AspectRatio = 4.000
 
 UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(0.98, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
-UIGradient_3.Offset = Vector2.new(-0.349999994, 0)
+UIGradient_3.Offset = Vector2.new(-0.400000006, 0)
 UIGradient_3.Rotation = -135
 UIGradient_3.Parent = Button3
+
+UICorner_4.Parent = Button3
 
 Button4.Name = "Button 4"
 Button4.Parent = ScrollingFrame
 Button4.AnchorPoint = Vector2.new(1, 1)
 Button4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Button4.BackgroundTransparency = 1.000
-Button4.Position = UDim2.new(0.945403278, 0, 0.22379759, 0)
-Button4.Size = UDim2.new(0.882225692, 0, 0.0763209537, 0)
+Button4.Position = UDim2.new(0.913488388, 0, 0.20066984, 0)
+Button4.Size = UDim2.new(0.799000025, 0, 0.144999996, 0)
 Button4.Image = "rbxassetid://2790382281"
 Button4.ImageColor3 = Color3.fromRGB(35, 255, 255)
-Button4.ScaleType = Enum.ScaleType.Slice
 Button4.SliceCenter = Rect.new(4, 4, 252, 252)
+Button4.SliceScale = 0.000
 
 BtnText_4.Name = "BtnText"
 BtnText_4.Parent = Button4
@@ -184,21 +198,23 @@ UIAspectRatioConstraint_4.Parent = Button4
 UIAspectRatioConstraint_4.AspectRatio = 4.000
 
 UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(0.98, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
-UIGradient_4.Offset = Vector2.new(-0.349999994, 0)
+UIGradient_4.Offset = Vector2.new(-0.400000006, 0)
 UIGradient_4.Rotation = -135
 UIGradient_4.Parent = Button4
+
+UICorner_5.Parent = Button4
 
 Button5.Name = "Button 5"
 Button5.Parent = ScrollingFrame
 Button5.AnchorPoint = Vector2.new(1, 1)
 Button5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Button5.BackgroundTransparency = 1.000
-Button5.Position = UDim2.new(0.945403278, 0, 0.278863668, 0)
-Button5.Size = UDim2.new(0.882225692, 0, 0.0763209537, 0)
+Button5.Position = UDim2.new(0.90816921, 0, 0.249127999, 0)
+Button5.Size = UDim2.new(0.799000025, 0, 0.144999996, 0)
 Button5.Image = "rbxassetid://2790382281"
 Button5.ImageColor3 = Color3.fromRGB(35, 255, 255)
-Button5.ScaleType = Enum.ScaleType.Slice
 Button5.SliceCenter = Rect.new(4, 4, 252, 252)
+Button5.SliceScale = 0.000
 
 BtnText_5.Name = "BtnText"
 BtnText_5.Parent = Button5
@@ -219,9 +235,11 @@ UIAspectRatioConstraint_5.Parent = Button5
 UIAspectRatioConstraint_5.AspectRatio = 4.000
 
 UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(0.98, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
-UIGradient_5.Offset = Vector2.new(-0.349999994, 0)
+UIGradient_5.Offset = Vector2.new(-0.400000006, 0)
 UIGradient_5.Rotation = -135
 UIGradient_5.Parent = Button5
+
+UICorner_6.Parent = Button5
 
 CloseButton.Name = "CloseButton"
 CloseButton.Parent = ImageLabel
@@ -250,7 +268,7 @@ ImageButton.Image = "http://www.roblox.com/asset/?id=7529900564"
 
 -- Scripts:
 
-local function UIHIIQB_fake_script() -- ImageLabel.LocalScript 
+local function DWPFX_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	
@@ -328,8 +346,8 @@ local function UIHIIQB_fake_script() -- ImageLabel.LocalScript
 	
 	
 end
-coroutine.wrap(UIHIIQB_fake_script)()
-local function HASAIP_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(DWPFX_fake_script)()
+local function CYDKK_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	while true do
@@ -347,8 +365,8 @@ local function HASAIP_fake_script() -- ImageLabel.LocalScript
 		wait(.7)
 	end
 end
-coroutine.wrap(HASAIP_fake_script)()
-local function UYHC_fake_script() -- Button1.easy 
+coroutine.wrap(CYDKK_fake_script)()
+local function LLAH_fake_script() -- Button1.easy 
 	local script = Instance.new('LocalScript', Button1)
 
 	local btn = script.Parent
@@ -391,8 +409,8 @@ local function UYHC_fake_script() -- Button1.easy
 		end
 	end)
 end
-coroutine.wrap(UYHC_fake_script)()
-local function RMLR_fake_script() -- Button1.METAB SCRIPT 
+coroutine.wrap(LLAH_fake_script)()
+local function ASMNMC_fake_script() -- Button1.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button1)
 
 	
@@ -480,92 +498,12 @@ local function RMLR_fake_script() -- Button1.METAB SCRIPT
 		end)
 		Fly()-- Press E to toggle
 	
-		repeat wait()
-		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("UpperTorso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
-		local mouse = game.Players.LocalPlayer:GetMouse()
-		repeat wait() until mouse
-		local plr = game.Players.LocalPlayer
-		local UpperTorso = plr.Character.UpperTorso
-		local flying = true
-		local deb = true
-		local ctrl = {f = 0, b = 0, l = 0, r = 0}
-		local lastctrl = {f = 0, b = 0, l = 0, r = 0}
-		local maxspeed = 50
-		local speed = 0
-	
-		function Fly()
-			local bg = Instance.new("BodyGyro", UpperTorso)
-			bg.P = 9e4
-			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
-			bg.cframe = UpperTorso.CFrame
-			local bv = Instance.new("BodyVelocity", UpperTorso)
-			bv.velocity = Vector3.new(0,0.1,0)
-			bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
-			repeat wait()
-				plr.Character.Humanoid.PlatformStand = true
-				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
-					speed = speed+.5+(speed/maxspeed)
-					if speed > maxspeed then
-						speed = maxspeed
-					end
-				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
-					speed = speed-1
-					if speed < 0 then
-						speed = 0
-					end
-				end
-				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
-					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
-					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
-				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
-					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
-				else
-					bv.velocity = Vector3.new(0,0.1,0)
-				end
-				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
-			until not flying
-			ctrl = {f = 0, b = 0, l = 0, r = 0}
-			lastctrl = {f = 0, b = 0, l = 0, r = 0}
-			speed = 0
-			bg:Destroy()
-			bv:Destroy()
-			plr.Character.Humanoid.PlatformStand = false
-		end
-		mouse.KeyDown:connect(function(key)
-			if key:lower() == "e" then
-				if flying then flying = false
-				else
-					flying = true
-					Fly()
-				end
-			elseif key:lower() == "w" then
-				ctrl.f = 1
-			elseif key:lower() == "s" then
-				ctrl.b = -1
-			elseif key:lower() == "a" then
-				ctrl.l = -1
-			elseif key:lower() == "d" then
-				ctrl.r = 1
-			end
-		end)
-		mouse.KeyUp:connect(function(key)
-			if key:lower() == "w" then
-				ctrl.f = 0
-			elseif key:lower() == "s" then
-				ctrl.b = 0
-			elseif key:lower() == "a" then
-				ctrl.l = 0
-			elseif key:lower() == "d" then
-				ctrl.r = 0
-			end
-		end)
-		Fly()
 	
 	end)
 	
 end
-coroutine.wrap(RMLR_fake_script)()
-local function UCKVOI_fake_script() -- Button2.easy 
+coroutine.wrap(ASMNMC_fake_script)()
+local function XEVRT_fake_script() -- Button2.easy 
 	local script = Instance.new('LocalScript', Button2)
 
 	local btn = script.Parent
@@ -608,13 +546,13 @@ local function UCKVOI_fake_script() -- Button2.easy
 		end
 	end)
 end
-coroutine.wrap(UCKVOI_fake_script)()
-local function WBHQOCI_fake_script() -- Button2.METAB SCRIPT 
+coroutine.wrap(XEVRT_fake_script)()
+local function KMKO_fake_script() -- Button2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button2)
 
 	--Values to Edit
 	local defaultSpeed = 16 --This is the default roblox character speed dont change unless you have to
-	local speed = 30 -- This is the speed you want to change to after E is pressed
+	local speed = 60 -- This is the speed you want to change to after E is pressed
 	
 	-- Dont edit anything below this line unless you know what you're doing
 	
@@ -639,8 +577,8 @@ local function WBHQOCI_fake_script() -- Button2.METAB SCRIPT
 	
 	end)
 end
-coroutine.wrap(WBHQOCI_fake_script)()
-local function QSEWCU_fake_script() -- Button3.easy 
+coroutine.wrap(KMKO_fake_script)()
+local function DKSX_fake_script() -- Button3.easy 
 	local script = Instance.new('LocalScript', Button3)
 
 	local btn = script.Parent
@@ -683,8 +621,8 @@ local function QSEWCU_fake_script() -- Button3.easy
 		end
 	end)
 end
-coroutine.wrap(QSEWCU_fake_script)()
-local function JFDY_fake_script() -- Button3.METAB SCRIPT 
+coroutine.wrap(DKSX_fake_script)()
+local function SOLI_fake_script() -- Button3.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button3)
 
 	
@@ -774,8 +712,8 @@ local function JFDY_fake_script() -- Button3.METAB SCRIPT
 	end)
 	
 end
-coroutine.wrap(JFDY_fake_script)()
-local function UZKGUOM_fake_script() -- Button4.easy 
+coroutine.wrap(SOLI_fake_script)()
+local function BYMIKV_fake_script() -- Button4.easy 
 	local script = Instance.new('LocalScript', Button4)
 
 	local btn = script.Parent
@@ -818,8 +756,8 @@ local function UZKGUOM_fake_script() -- Button4.easy
 		end
 	end)
 end
-coroutine.wrap(UZKGUOM_fake_script)()
-local function YJFQUNH_fake_script() -- Button4.METAB SCRIPT 
+coroutine.wrap(BYMIKV_fake_script)()
+local function TVAXIWT_fake_script() -- Button4.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button4)
 
 	
@@ -831,8 +769,8 @@ local function YJFQUNH_fake_script() -- Button4.METAB SCRIPT
 	end)
 	
 end
-coroutine.wrap(YJFQUNH_fake_script)()
-local function EXLAJO_fake_script() -- Button5.easy 
+coroutine.wrap(TVAXIWT_fake_script)()
+local function NLZY_fake_script() -- Button5.easy 
 	local script = Instance.new('LocalScript', Button5)
 
 	local btn = script.Parent
@@ -875,8 +813,8 @@ local function EXLAJO_fake_script() -- Button5.easy
 		end
 	end)
 end
-coroutine.wrap(EXLAJO_fake_script)()
-local function NYTFBXQ_fake_script() -- Button5.METAB SCRIPT 
+coroutine.wrap(NLZY_fake_script)()
+local function KEGI_fake_script() -- Button5.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button5)
 
 	
@@ -905,16 +843,16 @@ local function NYTFBXQ_fake_script() -- Button5.METAB SCRIPT
 	end)
 	
 end
-coroutine.wrap(NYTFBXQ_fake_script)()
-local function WGNQFII_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(KEGI_fake_script)()
+local function GNBW_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(WGNQFII_fake_script)()
-local function BTAWIES_fake_script() -- CloseButton.ANIME 
+coroutine.wrap(GNBW_fake_script)()
+local function EVHFPZJ_fake_script() -- CloseButton.ANIME 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local btn = script.Parent
@@ -957,8 +895,8 @@ local function BTAWIES_fake_script() -- CloseButton.ANIME
 		end
 	end)
 end
-coroutine.wrap(BTAWIES_fake_script)()
-local function LELFK_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(EVHFPZJ_fake_script)()
+local function GYBRGU_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local player = game.Players.LocalPlayer
@@ -975,8 +913,8 @@ local function LELFK_fake_script() -- ImageLabel.LocalScript
 		return backupnamecall(...)
 	end)
 end
-coroutine.wrap(LELFK_fake_script)()
-local function NQME_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(GYBRGU_fake_script)()
+local function DRUU_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -984,4 +922,4 @@ local function NQME_fake_script() -- ImageButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(NQME_fake_script)()
+coroutine.wrap(DRUU_fake_script)()
